@@ -33,8 +33,7 @@ public class CopyUtils {
             return true;
         }
 
-        String newFilePath = newFile.getAbsolutePath() + "//" + oldFile.getName();
-//        String newAbsolutePath = newFile.getAbsolutePath();
+        String newFilePath = newFile.getAbsolutePath() + File.separator + oldFile.getName();
         boolean isCreateDirs = newFile.mkdirs();
 
         //新文件目录无法创建
@@ -43,7 +42,6 @@ public class CopyUtils {
             return false;
         }
 
-        System.out.println(newFilePath);
         int data;
         byte[] bytes = new byte[1024];
 
