@@ -177,6 +177,8 @@ Socket和ServerSocket
 同样，客户端与服务器端是两个独立的应用程序。
 ```
 
+### TCP发送(客户端)
+
 TCP发送端步骤:
 ```
 建立客户端的Socket服务,并明确要连接的服务器
@@ -208,14 +210,17 @@ public class TCPClient {
         InputStream input = socket.getInputStream();
         byte[] data = new byte[1024];
         int len = input.read(data);
-        System.out.println("Content: " + new String(data, 0, len));
+        System.out.println("来自服务端的消息: " + new String(data, 0, len));
 
         //关闭资源
         socket.close();
     }
 }
 
+
 ```
+
+### TCP接收(服务端)
 
 TCP接收端步骤:
 
@@ -224,4 +229,36 @@ TCP接收端步骤:
 服务端没有直接流的操作,而是通过accept方法获取客户端对象，在通过获取到的客户端对象的流和客户端进行通信
 通过客户端的获取流对象的方法,读取数据或者写入数据
 如果服务完成,需要关闭客户端,然后关闭服务器，但是,一般会关闭客户端,不会关闭服务器,因为服务端是一直提供服务的
+```
+
+代码实现:
+
+```java
+package temp.com.networkdemo;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class TCPServer {
+    public static void main(String[] args) throws Exception {
+        ServerSocket server = new ServerSocket(8888);
+        //获取客户端套接字对象
+        Socket socket = server.accept();
+        //通过客户端套接字对象，socket获取字节输入流，读取客户端发来的数据
+        InputStream input = socket.getInputStream();
+        byte[] data = new byte[1024];
+        int len = input.read(data);
+        System.out.println("来自客户端的信息：" + new String(data, 0, len));
+
+        //服务器发送给客户端的数据，通过字节流输出
+        OutputStream out = socket.getOutputStream();
+        out.write("收到了你的消息".getBytes());
+
+        socket.close();
+        server.close();
+    }
+}
+
 ```
