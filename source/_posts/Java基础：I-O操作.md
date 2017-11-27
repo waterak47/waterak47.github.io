@@ -5,6 +5,10 @@ comments: true
 tags: Java基础
 categories: Java
 ---
+
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1flwlz8tcfog31kw24i7aq.gif)
+
+
 ## I/O简介
 I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络...
 
