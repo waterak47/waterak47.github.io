@@ -165,8 +165,6 @@ select count(nam), sex from customer group by sex;
 ![](https://ws4.sinaimg.cn/large/006tKfTcgy1flwot18gqrj30ja04xmxg.jpg)
 
 
-
-
 ### 删除数据库
 ```
 drop database mydb;
