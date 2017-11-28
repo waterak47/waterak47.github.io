@@ -86,6 +86,9 @@ public class JDBCDemo1 {
 
 ```
 
+### 修改数据
+
+
 
 参考：
 http://wiki.jikexueyuan.com/project/jdbc/introduction.html
