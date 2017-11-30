@@ -29,6 +29,58 @@ JDBC 具有 ODBC 一样的性能，允许 Java 程序包含与数据库无关的
 
 <!--more-->
 
+## 数据库相关代码
+
+请导入：
+```sql
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : JavaDev
+ Source Server Type    : MySQL
+ Source Server Version : 50720
+ Source Host           : 127.0.0.1:33060
+ Source Schema         : mydb
+
+ Target Server Type    : MySQL
+ Target Server Version : 50720
+ File Encoding         : 65001
+
+ Date: 30/11/2017 17:35:10
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for customer
+-- ----------------------------
+DROP TABLE IF EXISTS `customer`;
+CREATE TABLE `customer` (
+  `mid` char(5) NOT NULL,
+  `nam` varchar(20) DEFAULT NULL,
+  `birh` datetime DEFAULT NULL,
+  `sex` char(1) DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of customer
+-- ----------------------------
+BEGIN;
+INSERT INTO `customer` VALUES ('D0001', 'Jack1', '1990-06-01 00:00:00', '1');
+INSERT INTO `customer` VALUES ('D0002', 'Jack2', '1990-06-01 00:00:00', '1');
+INSERT INTO `customer` VALUES ('D0003', 'Jack3', '1993-06-01 00:00:00', '1');
+INSERT INTO `customer` VALUES ('D0004', 'Jack4', '1994-06-01 00:00:00', '1');
+INSERT INTO `customer` VALUES ('D0005', 'Jack5', '1995-06-01 00:00:00', '1');
+INSERT INTO `customer` VALUES ('D0006', 'Jack6', '1995-06-01 00:00:00', '1');
+INSERT INTO `customer` VALUES ('D0007', 'Jack7', '1996-06-01 00:00:00', '0');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+```
+
 ## JDBC编程步骤
 
 > 
