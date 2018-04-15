@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="I/O简介I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…  根据数据的走向分为：输入流、输出流根据处理的数据类型分为：字节流、字符流  字节流能处理所有类型数据，对应的类以Stream结尾。字符流只能处理文本数据，对应的类以Reader或Writer结尾。 字符流与字节流的区别：  1.字节流操作的基本单元为字节；  2.字符流操作的基本单元为Uni">
+<meta name="description" content="I/O简介I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…  根据数据的走向分为：输入流、输出流根据处理的数据类型分为：字节流、字符流  字节流能处理所有类型数据，对应的类以Stream结尾。字符流只能处理文本数据，对应的类以Reader或Writer结尾。 字符流与字节流的区别：  1.字节流操作的基本单元为字节；  2.字符流操作的基本单元为Un">
 <meta name="keywords" content="Java基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础：I&#x2F;O操作">
 <meta property="og:url" content="http://yoursite.com/2017/11/09/Java基础：I-O操作/index.html">
 <meta property="og:site_name" content="小男孩">
-<meta property="og:description" content="I/O简介I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…  根据数据的走向分为：输入流、输出流根据处理的数据类型分为：字节流、字符流  字节流能处理所有类型数据，对应的类以Stream结尾。字符流只能处理文本数据，对应的类以Reader或Writer结尾。 字符流与字节流的区别：  1.字节流操作的基本单元为字节；  2.字符流操作的基本单元为Uni">
+<meta property="og:description" content="I/O简介I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…  根据数据的走向分为：输入流、输出流根据处理的数据类型分为：字节流、字符流  字节流能处理所有类型数据，对应的类以Stream结尾。字符流只能处理文本数据，对应的类以Reader或Writer结尾。 字符流与字节流的区别：  1.字节流操作的基本单元为字节；  2.字符流操作的基本单元为Un">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1flwlz8tcfog31kw24i7aq.gif">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tKfTcgy1flbn1ooov2j30k40laq56.jpg">
-<meta property="og:updated_time" content="2017-11-09T07:43:56.000Z">
+<meta property="og:updated_time" content="2017-11-27T14:49:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础：I&#x2F;O操作">
-<meta name="twitter:description" content="I/O简介I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…  根据数据的走向分为：输入流、输出流根据处理的数据类型分为：字节流、字符流  字节流能处理所有类型数据，对应的类以Stream结尾。字符流只能处理文本数据，对应的类以Reader或Writer结尾。 字符流与字节流的区别：  1.字节流操作的基本单元为字节；  2.字符流操作的基本单元为Uni">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006tKfTcgy1flbn1ooov2j30k40laq56.jpg">
+<meta name="twitter:description" content="I/O简介I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…  根据数据的走向分为：输入流、输出流根据处理的数据类型分为：字节流、字符流  字节流能处理所有类型数据，对应的类以Stream结尾。字符流只能处理文本数据，对应的类以Reader或Writer结尾。 字符流与字节流的区别：  1.字节流操作的基本单元为字节；  2.字符流操作的基本单元为Un">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1flwlz8tcfog31kw24i7aq.gif">
 
 
 
@@ -100,7 +101,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -360,7 +361,8 @@
       
 
       
-        <h2 id="I-O简介"><a href="#I-O简介" class="headerlink" title="I/O简介"></a>I/O简介</h2><p>I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…</p>
+        <p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1flwlz8tcfog31kw24i7aq.gif" alt=""></p>
+<h2 id="I-O简介"><a href="#I-O简介" class="headerlink" title="I/O简介"></a>I/O简介</h2><p>I/O就是输入和输出，核心是I/O流，流用于读写设备上的数据，包括硬盘文件、内存、键盘、网络…</p>
 <blockquote>
 <p>根据数据的走向分为：输入流、输出流<br>根据处理的数据类型分为：字节流、字符流</p>
 </blockquote>
@@ -522,7 +524,7 @@
             <div class="site-state-item site-state-posts">
               <!-- <a href="/archives/ || archive"> -->
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -532,7 +534,7 @@
             <div class="site-state-item site-state-categories"> 
               <!-- <a href="/categories/ || th"> -->
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               <!-- </a> -->
               </a>
@@ -543,7 +545,7 @@
             <div class="site-state-item site-state-tags"> 
               <!-- <a href="/tags/ || tags"> -->
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               <!-- </a> -->
               </a>
@@ -599,13 +601,14 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">A Little Boy</span>
 
   
+  <span>鄂ICP备17012003号-1</span>
 </div>
 
 
@@ -617,7 +620,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.3</div>
 
 
 
@@ -751,13 +754,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
