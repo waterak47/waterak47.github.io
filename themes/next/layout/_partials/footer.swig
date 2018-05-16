@@ -39,7 +39,9 @@
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
 {% endif %}
-
+<div class="footer-custom" style="text-align:left;">
+鄂ICP备17012003号-1
+</div>
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
   #}{{ theme.footer.custom_text }}{#
